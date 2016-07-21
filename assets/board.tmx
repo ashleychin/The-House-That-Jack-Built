@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="3" height="3" tilewidth="74" tileheight="74" nextobjectid="1">
+ <tileset firstgid="1" name="gameTiles" tilewidth="75" tileheight="75" spacing="10" tilecount="9">
+  <image source="tiles.png" trans="ff00ff" width="256" height="256"/>
+ </tileset>
+ <layer name="boardLayer" width="3" height="3">
+  <data encoding="csv">
+1,1,1,
+1,2,1,
+1,1,1
+</data>
+ </layer>
+</map>

@@ -1,0 +1,43 @@
+{ "height":3,
+ "layers":[
+        {
+         "data":[1, 1, 1, 1, 2, 1, 1, 1, 1],
+         "height":3,
+         "name":"boardLayer",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":3,
+         "x":0,
+         "y":0
+        }],
+ "nextobjectid":1,
+ "orientation":"orthogonal",
+ "properties":
+    {
+
+    },
+ "renderorder":"right-down",
+ "tileheight":74,
+ "tilesets":[
+        {
+         "firstgid":1,
+         "image":"tiles.png",
+         "imageheight":256,
+         "imagewidth":256,
+         "margin":0,
+         "name":"gameTiles",
+         "properties":
+            {
+
+            },
+         "spacing":10,
+         "tilecount":9,
+         "tileheight":75,
+         "tilewidth":75,
+         "transparentcolor":"#ff00ff"
+        }],
+ "tilewidth":74,
+ "version":1,
+ "width":3
+}

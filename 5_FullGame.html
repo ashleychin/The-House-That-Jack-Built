@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <script src="libs/phaser.js"></script>
+
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    <!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />-->
+    <link rel="stylesheet" href="css/base.css" />
+    <script src="js/sfsInterface.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/GameManager.js"></script>
+    <script src="js/MyGame.js"></script>
+    <script src="js/Board.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/THTJB.js"></script>
+    <!-- Load SFS2X JS API -->
+    <script type="text/javascript" src="libs/SFS2X_API_JS.js"></script>
+</head>
+
+<body>
+    <div id="page-container" class="ui-widget">
+        <h1>The House That Jack Built</h1>
+        <div class="screen" id="login_screen">
+            <div class="ui-widget-header">Login</div>
+            <!-- login header -->
+            <div id="login-box" class="ui-widget-content"> <span> Enter login name </span>
+                <input type="text" id="login_txt" size="15">
+                <button id="login_btn">Login</button>
+            </div><!-- end of send-box-->
+        </div> <!-- end of login_screen -->
+
+        <div class="screen" id="lobby-screen">
+            <div class="ui-widget-header">Lobby</div>
+            <!-- chat header -->
+            <div class="ui-widget-content">
+                <!-- holder for panel -->
+                <div id="message-container" class="inline-div">
+                    <div id="chat-box" class="ui-widget-content scrolling-text">
+                    </div><!-- end of chat-box -->
+                </div><!-- end of message-container -->
+                
+                <div id="send-box">
+                    <input type="text" id="msg_txt" size="40">
+                    <button id="send_btn">Send</button>
+                </div><!-- end of send-box-->
+            </div><!-- end of chat panel -->
+            <div class="ui-widget-content">
+                <!-- holder for game panel -->
+                <button id="playGame_btn">Play a game</button>
+            </div><!-- end of game panel -->
+        </div><!-- end of  lobby-screen -->
+
+        <div class="screen" id="holding-screen">
+            <div class="ui-widget-header">Waiting for another player</div>
+            <!--header -->
+            <div class="ui-widget-content">
+                <!-- holder for panel -->
+                <div class="inline-div">
+                    <button id="goBack_btn">Go back to the Lobby</button>
+                </div><!-- end of buttons-container -->
+            </div><!-- end of holder panel -->
+        </div><!-- end of  waiting-screen -->
+
+        <div class="screen" id="game-screen">
+            <div class="ui-widget-header">Game</div>
+            <!-- game header -->
+            <div id="game-panel" class="ui-widget-content">
+                <!-- holder for the game panel -->
+                <div id="game-container" class="inline-div">
+                    <div id="statusMessage"></div>
+                </div><!-- end of game-container -->
+                <div id="gamebButtons-container" class="inline-div">
+                    <button id="quit_btn">Quit</button>
+                </div><!-- end of gameButtons-container -->
+            </div><!-- end of game panel -->
+        </div><!-- end of  game-screen -->
+
+        <footer id="debug_container">
+            <div class="ui-widget-header">Debug Messages</div>
+            <div id="debugMessages" class="ui-widget-content scrolling-text">Debug messages go here</div>
+            <button id="clearDebug_btn">Clear</button>
+        </footer><!-- end of debug_container -->
+    </div><!-- end of page_container -->
+
+    <script>
+        $(init);
+    </script>
+    
+</body>
+</html>
